@@ -20,8 +20,13 @@ public class MouseLooking : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         player.transform.Rotate(Vector3.up * mouseX);
-        verticalLookRotation -= mouseY;
-        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
-        transform.localRotation = Quaternion.Euler(verticalLookRotation, 0f, 0f);
+        player.transform.Rotate(Vector3.right * -mouseY);
+        //verticalLookRotation -= mouseY;
+        //transform.localRotation = Quaternion.Euler(verticalLookRotation, 0f, 0f);
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
