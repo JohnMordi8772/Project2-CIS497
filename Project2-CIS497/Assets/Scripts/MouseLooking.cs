@@ -19,8 +19,9 @@ public class MouseLooking : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        player.transform.Rotate(Vector3.up * mouseX);
-        player.transform.Rotate(Vector3.right * -mouseY);
+        player.transform.Rotate(-mouseY,mouseX, 0f);
+        
+        //player.transform.Rotate(Vector3.right * -mouseY);
         //verticalLookRotation -= mouseY;
         //transform.localRotation = Quaternion.Euler(verticalLookRotation, 0f, 0f);
     }
