@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Eagle1
   - Eagle2
+  - Collectable
   layers:
   - Default
   - TransparentFX

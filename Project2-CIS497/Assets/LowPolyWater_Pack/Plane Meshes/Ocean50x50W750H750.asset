@@ -19,6 +19,8 @@ Mesh:
     localAABB:
       m_Center: {x: 0, y: 0.000023961067, z: 0}
       m_Extent: {x: 375, y: 1.499974, z: 375}
+      m_Center: {x: 0, y: -0.000034451485, z: 0}
+      m_Extent: {x: 375, y: 1.4998899, z: 375}
   m_Shapes:
     vertices: []
     shapes: []

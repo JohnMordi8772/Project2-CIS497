@@ -7,6 +7,7 @@ public class MouseLooking : MonoBehaviour
     public GameObject player;
     public float mouseSensitivity = 100f;
     private float verticalLookRotation = 0f;
+    private float mouseX, mouseY, mouseZ = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +17,12 @@ public class MouseLooking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        mouseX += Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        mouseY -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        mouseZ = Mathf.Clamp(mouseZ, 0f, 0f);
 
-        player.transform.Rotate(-mouseY,mouseX, 0f);
+        player.transform.localRotation = Quaternion.Euler(mouseY, mouseX, mouseZ);
+        
         
         //player.transform.Rotate(Vector3.right * -mouseY);
         //verticalLookRotation -= mouseY;

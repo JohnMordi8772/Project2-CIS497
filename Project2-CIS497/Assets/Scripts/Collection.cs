@@ -5,15 +5,15 @@ using UnityEngine;
 public class Collection : MonoBehaviour
 {
     public GameObject hide1;
-    public GameObject hide2;
+    //public GameObject hide2;
 
     // Start is called before the first frame update
     void Start()
     {
-        hide1 = GameObject.Find("Eagle1");
-        hide2 = GameObject.Find("Eagle2");
-        hide1.gameObject.SetActive(true);
-        hide2.gameObject.SetActive(false);
+        //hide1 = GameObject.Find("Eagle1");
+        //hide2 = GameObject.Find("Eagle2");
+        //hide1.gameObject.SetActive(true);
+        //hide2.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,8 +26,9 @@ public class Collection : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            hide1.gameObject.SetActive(false);
-            hide2.gameObject.SetActive(true);
+            Destroy(gameObject);
+            //gameObject.SetActive(false);
+            //hide2.gameObject.SetActive(true);
         }
     }
 }
