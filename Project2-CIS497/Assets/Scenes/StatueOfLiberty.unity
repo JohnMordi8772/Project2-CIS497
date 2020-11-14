@@ -353,10 +353,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 34
 =======
   m_RootOrder: 36
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 33
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 33
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -423,10 +427,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 13
 =======
       value: 12
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 9
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 9
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -770,10 +778,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 16
 =======
   m_RootOrder: 18
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 14
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 14
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -1343,12 +1355,17 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 1781155632}
   m_RootOrder: 2
 =======
   m_Father: {fileID: 0}
   m_RootOrder: 30
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_Father: {fileID: 0}
   m_RootOrder: 29
@@ -1421,10 +1438,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 9
 =======
       value: 8
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 5
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 5
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -1555,10 +1576,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 38
 =======
   m_RootOrder: 40
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 35
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 35
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -1735,10 +1760,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 21
 =======
   m_RootOrder: 20
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 18
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 18
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -1920,10 +1949,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 7
 =======
       value: 6
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 4
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 4
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -2151,10 +2184,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 14
 =======
       value: 13
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 10
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 10
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -2289,10 +2326,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 30
 =======
   m_RootOrder: 32
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 31
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 31
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -2578,10 +2619,14 @@ RectTransform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 35
 =======
   m_RootOrder: 37
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 33
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 33
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -2634,10 +2679,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 24
 =======
       value: 22
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 23
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 23
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -2791,10 +2840,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 15
 =======
       value: 14
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 13
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 13
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -3062,10 +3115,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 11
 =======
       value: 10
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 7
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 7
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -3327,10 +3384,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 33
 =======
   m_RootOrder: 35
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 32
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 32
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -4158,10 +4219,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 12
 =======
       value: 11
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 8
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 8
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -4426,10 +4491,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 29
 =======
   m_RootOrder: 31
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 30
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 30
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -4876,10 +4945,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 36
 =======
   m_RootOrder: 38
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 34
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 34
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -5004,10 +5077,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 10
 =======
       value: 9
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 6
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 6
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -5113,10 +5190,14 @@ PrefabInstance:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 8
 =======
       value: 7
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+      value: 5
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
       value: 5
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -5415,10 +5496,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 22
 =======
   m_RootOrder: 21
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 20
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 20
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -5521,12 +5606,17 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 1781155632}
   m_RootOrder: 1
 =======
   m_Father: {fileID: 0}
   m_RootOrder: 29
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_Father: {fileID: 0}
   m_RootOrder: 28
@@ -5633,10 +5723,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 37
 =======
   m_RootOrder: 39
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_RootOrder: 34
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_RootOrder: 34
 >>>>>>> parent of e542b61... China scene collectibles + portal work
@@ -6356,12 +6450,17 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 1781155632}
   m_RootOrder: 0
 =======
   m_Father: {fileID: 0}
   m_RootOrder: 27
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+>>>>>>> parent of e542b61... China scene collectibles + portal work
 =======
   m_Father: {fileID: 0}
   m_RootOrder: 26
