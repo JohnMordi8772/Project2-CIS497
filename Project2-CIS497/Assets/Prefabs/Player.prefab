@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 9105975653390937954}
   - component: {fileID: 9105975653390937953}
   - component: {fileID: 9105975653390937950}
+  - component: {fileID: 7154884428478915179}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -209,7 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 9105975653390937950}
-  speed: 3
+  playerRb: {fileID: 0}
+  speed: 20
   rotationSpeed: 30
 --- !u!143 &9105975653390937950
 CharacterController:
@@ -229,3 +231,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7154884428478915179
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105975653390937952}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

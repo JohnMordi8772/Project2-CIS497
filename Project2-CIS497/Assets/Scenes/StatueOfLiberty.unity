@@ -235,7 +235,7 @@ Transform:
   m_LocalScale: {x: 5, y: 3, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &94910930 stripped
 GameObject:
@@ -350,6 +350,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 34
@@ -359,6 +360,9 @@ Transform:
 =======
   m_RootOrder: 33
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 36
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &159948093 stripped
 GameObject:
@@ -416,6 +420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031339192871210686, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 13
@@ -425,6 +430,9 @@ PrefabInstance:
 =======
       value: 9
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 13
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8031339192871210686, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -759,6 +767,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 16
@@ -768,6 +777,9 @@ Transform:
 =======
   m_RootOrder: 14
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 18
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &358165276
 GameObject:
@@ -978,7 +990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6289421101771951241, guid: 1c19fcab6156a41f187195816b95e531, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6289421101771951241, guid: 1c19fcab6156a41f187195816b95e531, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1338,8 +1350,12 @@ Transform:
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
 =======
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 29
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 31
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: -9, z: 0}
 --- !u!1 &465757910 stripped
 GameObject:
@@ -1401,6 +1417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9089b1db16b58f4282a94e020b9c0e8, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 9
@@ -1410,6 +1427,9 @@ PrefabInstance:
 =======
       value: 5
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 9
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9089b1db16b58f4282a94e020b9c0e8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1531,6 +1551,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 38
@@ -1540,6 +1561,9 @@ Transform:
 =======
   m_RootOrder: 35
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 40
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &546036416
 PrefabInstance:
@@ -1707,6 +1731,7 @@ Transform:
   m_LocalScale: {x: 10, y: 2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 21
@@ -1716,6 +1741,9 @@ Transform:
 =======
   m_RootOrder: 18
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 21
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &558919052 stripped
 GameObject:
@@ -1888,6 +1916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad3119cbd6dce024e8460ef32dec49df, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 7
@@ -1897,6 +1926,9 @@ PrefabInstance:
 =======
       value: 4
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 7
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad3119cbd6dce024e8460ef32dec49df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1947,6 +1979,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d8ea93d2d4757e444a5349f4bc849128, type: 3}
+<<<<<<< Updated upstream
 --- !u!1 &659879918
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,6 +2111,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &671344150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2115,6 +2150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 14
@@ -2124,6 +2160,9 @@ PrefabInstance:
 =======
       value: 10
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 14
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2249,6 +2288,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 30
@@ -2258,6 +2298,9 @@ Transform:
 =======
   m_RootOrder: 31
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 33
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706654850
 GameObject:
@@ -2352,7 +2395,7 @@ Transform:
   m_LocalScale: {x: 13, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 81, z: 0}
 --- !u!1001 &717937040
 PrefabInstance:
@@ -2407,7 +2450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3939705782721118798, guid: 08e273c6796284065948739ccf109e3f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3939705782721118798, guid: 08e273c6796284065948739ccf109e3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2534,6 +2577,7 @@ RectTransform:
   m_Children:
   - {fileID: 791478923}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 35
@@ -2543,6 +2587,9 @@ RectTransform:
 =======
   m_RootOrder: 33
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 37
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2739,6 +2786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 15
@@ -2748,6 +2796,9 @@ PrefabInstance:
 =======
       value: 13
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 15
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2914,7 +2965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3006,6 +3057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a1ad3270d9877e749b0b62c9d34e175e, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 11
@@ -3015,6 +3067,9 @@ PrefabInstance:
 =======
       value: 7
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 11
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a1ad3270d9877e749b0b62c9d34e175e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3098,7 +3153,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 33
+=======
+  m_RootOrder: 34
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &957980796
 PrefabInstance:
@@ -3267,6 +3326,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 33
@@ -3276,6 +3336,9 @@ Transform:
 =======
   m_RootOrder: 32
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 35
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!850595691 &997863457
 LightingSettings:
@@ -3395,104 +3458,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d8ea93d2d4757e444a5349f4bc849128, type: 3}
---- !u!1 &1024688453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1024688454}
-  - component: {fileID: 1024688457}
-  - component: {fileID: 1024688456}
-  - component: {fileID: 1024688455}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1024688454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024688453}
-  m_LocalRotation: {x: -0.12239194, y: 0.011897459, z: -0.0014674129, w: -0.99240947}
-  m_LocalPosition: {x: -0.03151846, y: 1.6896658, z: -3.8458457}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 659879924}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1024688455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024688453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c43a459fd324f504a9e3c699e032e348, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 659879918}
-  mouseSensitivity: 100
---- !u!81 &1024688456
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024688453}
-  m_Enabled: 1
---- !u!20 &1024688457
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024688453}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1001 &1068787267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4094,6 +4059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 175836074482725414, guid: 4ed8ce2296032df4b8067b066def01b7, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 12
@@ -4103,6 +4069,9 @@ PrefabInstance:
 =======
       value: 8
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 12
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 175836074482725414, guid: 4ed8ce2296032df4b8067b066def01b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4262,7 +4231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
 --- !u!1 &1334508361
 GameObject:
@@ -4358,6 +4327,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 29
@@ -4367,6 +4337,9 @@ Transform:
 =======
   m_RootOrder: 30
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 32
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352674686 stripped
 GameObject:
@@ -4652,7 +4625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3939705782721118798, guid: 08e273c6796284065948739ccf109e3f, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3939705782721118798, guid: 08e273c6796284065948739ccf109e3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4726,7 +4699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4804,6 +4777,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 36
@@ -4813,6 +4787,9 @@ Transform:
 =======
   m_RootOrder: 34
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 38
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1519431661
 PrefabInstance:
@@ -4928,6 +4905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d8ea93d2d4757e444a5349f4bc849128, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 10
@@ -4937,6 +4915,9 @@ PrefabInstance:
 =======
       value: 6
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 10
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d8ea93d2d4757e444a5349f4bc849128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5033,6 +5014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014104450432, guid: 8422b65b62eb3d7419957292ae5cc867, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 8
@@ -5042,6 +5024,9 @@ PrefabInstance:
 =======
       value: 5
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+      value: 8
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4000014104450432, guid: 8422b65b62eb3d7419957292ae5cc867, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5205,7 +5190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 880970725214738984, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5331,6 +5316,7 @@ Transform:
   m_LocalScale: {x: 50, y: 3, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 22
@@ -5340,6 +5326,9 @@ Transform:
 =======
   m_RootOrder: 20
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 22
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674499620
 GameObject:
@@ -5443,8 +5432,12 @@ Transform:
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
 =======
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 28
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 30
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: -9, z: 0}
 --- !u!1 &1769717626
 GameObject:
@@ -5540,6 +5533,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_RootOrder: 37
@@ -5549,6 +5543,9 @@ Transform:
 =======
   m_RootOrder: 34
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 39
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &1797598537
 PrefabInstance:
@@ -5760,7 +5757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4972782361026284653, guid: c75e969bd0bc8475095f2d09637b1120, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4972782361026284653, guid: c75e969bd0bc8475095f2d09637b1120, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5919,7 +5916,7 @@ Transform:
   m_LocalScale: {x: 13, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: -9, z: 0}
 --- !u!1001 &1984809917
 PrefabInstance:
@@ -6145,6 +6142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9105975653390937953, guid: 260887aaa99351249a72629c71c4b427, type: 3}
+      propertyPath: speed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 260887aaa99351249a72629c71c4b427, type: 3}
 --- !u!1 &2092645956 stripped
@@ -6269,8 +6270,12 @@ Transform:
 >>>>>>> 788b41cefb430dd669c5a2a80964d4c538205a19
 =======
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 26
 >>>>>>> parent of e542b61... China scene collectibles + portal work
+=======
+  m_RootOrder: 28
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: -9, z: 0}
 --- !u!114 &2129512193
 MonoBehaviour:

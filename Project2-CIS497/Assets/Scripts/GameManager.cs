@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public Text timeText;
     private int time;
     private bool gameOver;
+    public static bool tutorialOver;
 
 
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     {
         gameOver = false;
         time = 60;
+        tutorialOver = false;
         StartCoroutine(Timer());
     }
 

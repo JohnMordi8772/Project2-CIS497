@@ -11,7 +11,7 @@ public class RotateCollectibles : MonoBehaviour
 {
     private bool triggered = false;
     public float speed = 5;
-    public Vector3 rotateDirection;
+    private Vector3 rotateDirection = new Vector3(0,1,0);
 
     void Update()
     {

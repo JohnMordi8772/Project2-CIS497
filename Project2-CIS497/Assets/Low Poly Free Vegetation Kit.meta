@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Project2-CIS497/Assets/Low Poly Free Vegetation Kit.meta
 guid: e250e071990cc455fbe482353b878d87
 folderAsset: yes
 DefaultImporter:
+=======
+guid: dcef159e98d0e824ba8cbf8538c6f76e
+PrefabImporter:
+>>>>>>> Stashed changes:Project2-CIS497/Assets/Prefabs/RingPathMarker.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
