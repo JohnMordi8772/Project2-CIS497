@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/China.unity
     guid: 8301ccf87b729fe4d98cf6a720ba9744
   - enabled: 1
-    path: Assets/Scenes/Mountain.unity
-    guid: f37fc6a989efd754693768f74802abdd
+    path: Assets/Scenes/MtEverest.unity
+    guid: 89fbf168a8f9c495691cefb48db85c1f
   - enabled: 1
     path: Assets/Scenes/Pyramids.unity
     guid: ea0db22374d3ea245bd8b1c4651341be
