@@ -16,14 +16,15 @@ public class GameManager :  Singleton<GameManager>
     private int time;
     private bool gameOver;
     public static bool tutorialOver;
-    private static int currentLevelName = 0;
+    public static int currentLevelName = 0;
+    public static float collectables = 0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
         gameOver = false;
-        time = 60;
+        time = 300;
         tutorialOver = false;
         timeText = Text.FindObjectOfType<Text>();
         StartCoroutine(Timer());
@@ -32,8 +33,8 @@ public class GameManager :  Singleton<GameManager>
     // Update is called once per frame
     void Update()
     {
-        float collectables = GameObject.FindGameObjectsWithTag("Collectable").Length;
-        if(time > 0 && collectables == 12 && tutorialOver)
+        //float collectables = GameObject.FindGameObjectsWithTag("Collectable").Length;
+        if (time > 0 && collectables == 12 && tutorialOver && currentLevelName == 1)
         {
             StopAllCoroutines();
             gameOver = true;
@@ -41,7 +42,7 @@ public class GameManager :  Singleton<GameManager>
             timeText.fontSize = 40;
             timeText.text = "You Win!\n(Press R to play again!)";
         }
-        else if(time == 0 && collectables > 0)
+        else if(time == 0 && collectables != 12)
         {
             gameOver = true;
             timeText.alignment = TextAnchor.MiddleCenter;
@@ -51,6 +52,7 @@ public class GameManager :  Singleton<GameManager>
         if(gameOver && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Cursor.lockState = CursorLockMode.Confined;
         }
     }
 

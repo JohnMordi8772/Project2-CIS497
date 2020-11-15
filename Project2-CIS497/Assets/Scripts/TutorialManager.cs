@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     public Text tutorialText;
-    public GameObject[] array;
+    public GameObject[] rings, portals;
     public GameObject collectable;
     // Start is called before the first frame update
     void Start()
@@ -58,9 +58,9 @@ public class TutorialManager : MonoBehaviour
 
         tutorialText.text = "To ensure that you understand how to play, please pass thorugh all the rings in this area.";
         
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < rings.Length; i++)
         {
-            array[i].SetActive(true);
+            rings[i].SetActive(true);
         }
         
 
@@ -83,6 +83,11 @@ public class TutorialManager : MonoBehaviour
         yield return null;
 
         tutorialText.text = "Finally, to enter and exit levels you will need to go into a portal.";
+
+        for (int i = 0; i < portals.Length; i++)
+        {
+            portals[i].SetActive(true);
+        }
 
         while (!Input.GetButtonDown("Fire1"))
         {

@@ -24,11 +24,18 @@ public class Collection : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && GameManager.currentLevelName != 1)
         {
             Destroy(gameObject);
+            GameManager.collectables += 1f;
+            Debug.Log(GameManager.collectables);
+            
             //gameObject.SetActive(false);
             //hide2.gameObject.SetActive(true);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 }
