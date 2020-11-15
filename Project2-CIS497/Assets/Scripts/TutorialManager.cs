@@ -14,6 +14,13 @@ public class TutorialManager : MonoBehaviour
         //GameObject[] array = GameObject.FindGameObjectsWithTag("RingMarker");
         if (!GameManager.tutorialOver)
             StartCoroutine(Tutorial());
+        else
+        {
+            for (int i = 0; i < portals.Length; i++)
+            {
+                portals[i].SetActive(true);
+            }
+        }
     }
 
     IEnumerator Tutorial()
