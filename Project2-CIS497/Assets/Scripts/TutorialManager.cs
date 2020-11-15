@@ -7,6 +7,7 @@ public class TutorialManager : MonoBehaviour
 {
     public Text tutorialText;
     public GameObject[] array;
+    public GameObject collectable;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,8 @@ public class TutorialManager : MonoBehaviour
 
     IEnumerator Tutorial()
     {
+        tutorialText.alignment = TextAnchor.LowerCenter;
+        tutorialText.fontSize = 20;
         tutorialText.text = "Welcome to the tutorial for \"Fly to Your Dreams!\". (Press the LEFT-MOUSE BUTTON to get through the tutorial.)";
 
         while(!Input.GetButtonDown("Fire1"))
@@ -70,6 +73,8 @@ public class TutorialManager : MonoBehaviour
 
         tutorialText.text = "Now that you understand movement, the real goal of this game is to collect all collectables, like the one in front of you, within 5 minutes.";
 
+        //Instantiate(collectable);
+
         while (!Input.GetButtonDown("Fire1"))
         {
             yield return null;
@@ -83,6 +88,9 @@ public class TutorialManager : MonoBehaviour
         {
             yield return null;
         }
+
+        GameManager.tutorialOver = true;
+        tutorialText.text = "";
 
         yield break;
     }

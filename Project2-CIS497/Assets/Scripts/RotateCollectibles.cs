@@ -10,7 +10,7 @@ using UnityEngine;
 public class RotateCollectibles : MonoBehaviour
 {
     private bool triggered = false;
-    public float speed = 5;
+    private float speed = 20;
     private Vector3 rotateDirection = new Vector3(0,1,0);
 
     void Update()

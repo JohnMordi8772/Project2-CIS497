@@ -1391,7 +1391,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!1001 &546036416
 PrefabInstance:
@@ -2281,7 +2281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &732724833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3167,6 +3167,14 @@ PrefabInstance:
     - target: {fileID: 5277746845241116816, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277746845241116819, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
+      propertyPath: currentLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277746845241116819, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
+      propertyPath: nextSceneToLoad
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5277746845241116831, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4549,7 +4557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87fe6e5586f0eb2439956b53ad8d6bc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 791478924}
 --- !u!4 &1513419407
 Transform:
   m_ObjectHideFlags: 0
@@ -5065,7 +5072,7 @@ Transform:
   m_LocalScale: {x: 50, y: 3, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674499620
 GameObject:
@@ -5627,7 +5634,7 @@ Transform:
   m_LocalScale: {x: 13, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: -9, z: 0}
 --- !u!1001 &1984809917
 PrefabInstance:
@@ -5967,5 +5974,5 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: -9, z: 0}

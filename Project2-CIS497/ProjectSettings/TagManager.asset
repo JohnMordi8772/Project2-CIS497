@@ -8,6 +8,7 @@ TagManager:
   - Eagle2
   - Collectable
   - RingMarker
+  - GameManager
   layers:
   - Default
   - TransparentFX

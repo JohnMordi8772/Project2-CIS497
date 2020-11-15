@@ -1,5 +1,5 @@
 ﻿/*
- * Name: George Tang, Josh B, Jack Mordi, Levi Wyant
+ * Name: Jack Mordi
  * Project Dream
  * Purpose: controls the aspects of the game, win/loss conditions, timer, collecting objects
  */
@@ -12,10 +12,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager :  Singleton<GameManager>
 {
-    public Text timeText;
+    public static Text timeText;
     private int time;
     private bool gameOver;
     public static bool tutorialOver;
+    private static int currentLevelName = 0;
 
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class GameManager :  Singleton<GameManager>
         gameOver = false;
         time = 60;
         tutorialOver = false;
+        timeText = Text.FindObjectOfType<Text>();
         StartCoroutine(Timer());
     }
 
@@ -31,7 +33,7 @@ public class GameManager :  Singleton<GameManager>
     void Update()
     {
         float collectables = GameObject.FindGameObjectsWithTag("Collectable").Length;
-        if(time > 0 && collectables == 0)
+        if(time > 0 && collectables == 12 && tutorialOver)
         {
             StopAllCoroutines();
             gameOver = true;
@@ -52,14 +54,114 @@ public class GameManager :  Singleton<GameManager>
         }
     }
 
+    public void LoadLevel(int levelName)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        AsyncOperation ao = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to load level " + levelName);
+            return;
+        }
+        currentLevelName = levelName;
+    }
+    public static void LoadLevelStatic(int levelName)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        AsyncOperation ao = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to load level " + levelName);
+            return;
+        }
+        currentLevelName = levelName;
+    }
+
+    public void RestartLevel()
+    {
+        int restartName = currentLevelName;
+        AsyncOperation ao = SceneManager.UnloadSceneAsync(restartName);
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to unload level " + restartName);
+            return;
+        }
+        Cursor.lockState = CursorLockMode.Locked;
+        ao = SceneManager.LoadSceneAsync(restartName, LoadSceneMode.Additive);
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to load level " + restartName);
+            return;
+        }
+        currentLevelName = restartName;
+    }
+
+    public void UnloadLevel(int levelName)
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        AsyncOperation ao = SceneManager.UnloadSceneAsync(levelName);
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to unload level " + levelName);
+            return;
+        }
+    }
+
+    public static void UnloadLevelStatic(int levelName)
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        AsyncOperation ao = SceneManager.UnloadSceneAsync(levelName);
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to unload level " + levelName);
+            return;
+        }
+    }
+
+    public void UnloadCurrentLevel()
+    {
+        AsyncOperation ao = SceneManager.UnloadSceneAsync(currentLevelName);
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to unload level " + currentLevelName);
+            return;
+        }
+    }
+
+    //public void Pause()
+    //{
+    //    Time.timeScale = 0f;
+    //    pauseMenu.SetActive(true);
+    //    Cursor.lockState = CursorLockMode.Confined;
+    //}
+
+    //public void Unpause()
+    //{
+    //    Time.timeScale = 1f;
+    //    pauseMenu.SetActive(false);
+    //}
+
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.P))
+    //    {
+    //        Pause();
+    //    }
+    //}
+
     IEnumerator Timer()
     {
-        timeText.text = "Time: " + time;
+
+        //timeText.text = "Time: " + time;
         while(time >0)
         {
-            yield return new WaitForSeconds(1);
-            --time;
-            timeText.text = "Time: " + time;
+            if (currentLevelName != 1 && currentLevelName != 0)
+            {
+                timeText.text = "Time: " + time;
+                yield return new WaitForSeconds(1);
+                --time;
+            }
+            yield return null;
         }
         yield break;
     }
