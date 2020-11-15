@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Name: George Tang, Josh B, Jack Mordi, Levi Wyant
+ * Project Dream
+ * Purpose: controls the aspects of the game, win/loss conditions, timer, collecting objects
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
