@@ -60,19 +60,31 @@ public class GameManager :  Singleton<GameManager>
         {
             dialogue.text = "";
         }
+        //Diaglouge goes here
         else
         {
+            /*
+             * these quotes can be changed later to fit something more linear with the "character" of the story later. 
+             * For now these quotes are in place for the playtesting part of our project. 
+             * 
+             */
             if (currentLevelName == 2 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
-            {
-                dialogue.text = "Statue of Liberty";
+            { 
+                dialogue.text = "...There are no words that can tell the hidden spirit of the wilderness "             +
+                    "that can reveal its mystery, its melancholy and its charm. The nation behaves well if it "        +
+                    "treats the natural resources as assets which it must turn over to the next generation increased " +
+                    "and not impaired in value. - Theodore Roosevelt";
             }
             else if(currentLevelName == 3 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
-                dialogue.text = "Asia";
+                dialogue.text = "A good traveller has no fixed plans, and is not intent on arriving. - Lao Tzu";
             }
             else if(currentLevelName == 4 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
-                dialogue.text = "Everest";
+                //George Mallory passed in 1924. Copyrights on text go into public domain after 70 years after the death of an author/ commmentator (so clear as of 1994). 
+                dialogue.text = "I look back on tremendous effects and exhaustion and dismal looking out of a tent door onto " +
+                                 "a dismal world of snow and vanishing hopes - and yet... there have been a good many things to set on the other side." +
+                                 " - George Mallory";
             }
             else if(currentLevelName == 5 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
