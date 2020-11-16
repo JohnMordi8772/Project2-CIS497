@@ -27,6 +27,7 @@ public class NextScene : MonoBehaviour
         GameManager.UnloadLevelStatic(currentLevel);
         GameManager.LoadLevelStatic(nextSceneToLoad);
         
+        
         //if(GameObject.FindObjectOfType<Text>() != null)
             //GameManager.timeText = GameObject.FindObjectOfType<Text>();
     }

@@ -35,7 +35,9 @@ public class GameManager :  Singleton<GameManager>
     // Update is called once per frame
     void Update()
     {
-        //float collectables = GameObject.FindGameObjectsWithTag("Collectable").Length;
+        if(SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(currentLevelName))
+            SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(currentLevelName));
+        
         if (time > 0 && collectables == 12 && tutorialOver && currentLevelName == 1)
         {
             StopAllCoroutines();
@@ -59,6 +61,7 @@ public class GameManager :  Singleton<GameManager>
         if(currentLevelName == 0 || currentLevelName == 1)
         {
             dialogue.text = "";
+            
         }
         else
         {
@@ -101,7 +104,9 @@ public class GameManager :  Singleton<GameManager>
             Debug.LogError("[GameManager] Unable to load level " + levelName);
             return;
         }
+        
         currentLevelName = levelName;
+        
     }
 
     public void RestartLevel()
