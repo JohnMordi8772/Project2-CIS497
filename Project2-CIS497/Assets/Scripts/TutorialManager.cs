@@ -85,7 +85,7 @@ public class TutorialManager : MonoBehaviour
 
         yield return null;
 
-        tutorialText.text = "Now that you understand movement, the real goal of this game is to collect all collectables, like the burger down by the tree, from each level within 5 minutes. You just have to touch them.";
+        tutorialText.text = "Now that you understand movement, the real goal of this game is to collect all collectables, like the burger down by the tree, from each level within 5 minutes. You just have to touch them, so go collect the burger.";
 
         Instantiate(collectable, new Vector3(-8,35,70), transform.rotation);
 

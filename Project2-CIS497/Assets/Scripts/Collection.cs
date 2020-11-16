@@ -33,7 +33,7 @@ public class Collection : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.collectables += 1f;
-            Debug.Log(GameManager.collectables);
+            //Debug.Log(GameManager.collectables);
             
             //gameObject.SetActive(false);
             //hide2.gameObject.SetActive(true);

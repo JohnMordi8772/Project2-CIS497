@@ -10,10 +10,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
-    public Rigidbody playerRb;
     public float speed = 10f;
-    public float rotationSpeed = 30f;
-    private float zRotation = 0f;
 
 
     // Start is called before the first frame update
@@ -37,10 +34,5 @@ public class PlayerController : MonoBehaviour
 
         Vector3 vector = transform.forward * z;// + transform.right * x * speed;
         controller.Move(vector);
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            playerRb.AddForce(Vector3.forward * 30, ForceMode.Impulse);
-        }
     }
 }

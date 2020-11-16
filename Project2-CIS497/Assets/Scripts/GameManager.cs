@@ -19,6 +19,7 @@ public class GameManager :  Singleton<GameManager>
     public static int currentLevelName = 0;
     public static float collectables = 0f;
     public Text dialogue;
+    public GameObject intro, winOutro, lossOutro;
 
 
     // Start is called before the first frame update
@@ -42,20 +43,24 @@ public class GameManager :  Singleton<GameManager>
         {
             StopAllCoroutines();
             gameOver = true;
+            winOutro.SetActive(true);
+            SceneManager.UnloadSceneAsync(currentLevelName);
             timeText.alignment = TextAnchor.MiddleCenter;
             timeText.fontSize = 40;
-            timeText.text = "You Win!\n(Press R to play again!)";
+            timeText.text = "Max remembered the dream and decided to follow it!\n(You Win! Press R to play again!)";
         }
         else if(time == 0 && collectables != 12)
         {
             gameOver = true;
+            lossOutro.SetActive(true);
+            SceneManager.UnloadSceneAsync(currentLevelName);
             timeText.alignment = TextAnchor.MiddleCenter;
             timeText.fontSize = 40;
-            timeText.text = "You Lose!\n(Press R to try again!)";
+            timeText.text = "The dream has been forgotten and Max is still missing something in life.\n(You Lose! Press R to try again!)";
         }
         if(gameOver && Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(0).name);
             Cursor.lockState = CursorLockMode.Confined;
         }
         if(currentLevelName == 0 || currentLevelName == 1)
@@ -63,7 +68,7 @@ public class GameManager :  Singleton<GameManager>
             dialogue.text = "";
             
         }
-        //Diaglouge goes here
+        //Dialogue goes here
         else
         {
             /*
@@ -94,6 +99,26 @@ public class GameManager :  Singleton<GameManager>
                 dialogue.text = "Egypt";
             }
         }
+    }
+    public void IntroMethod()
+    {
+        StartCoroutine(Intro());
+    }
+    IEnumerator Intro()
+    {
+        intro.SetActive(true);
+        timeText.alignment = TextAnchor.MiddleCenter;
+        timeText.fontSize = 40;
+        timeText.text = "Through the progression of life many lose their will or inspiration to see the world. It is often these journeys that lead to a better understanding of our surroundings, and a renewed perspective on where we started." +
+            " Max has lost his will to see the world. Renew his will and complete his dream. ";
+        while (!Input.GetButtonDown("Fire1"))
+            yield return null;
+        intro.SetActive(false);
+        timeText.alignment = TextAnchor.UpperLeft;
+        timeText.fontSize = 14;
+        timeText.text = "";
+        LoadLevel(1);
+        yield break;
     }
 
     public void LoadLevel(int levelName)
