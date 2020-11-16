@@ -17,7 +17,7 @@ public class GameManager :  Singleton<GameManager>
     private bool gameOver;
     public static bool tutorialOver;
     public static int currentLevelName = 0;
-    public static float collectables = 0f;
+    public static float collectables;
     public Text dialogue;
     public GameObject intro, winOutro, lossOutro;
 
@@ -28,6 +28,7 @@ public class GameManager :  Singleton<GameManager>
         gameOver = false;
         time = 300;
         tutorialOver = false;
+        collectables = 0f;
         dialogue.alignment = TextAnchor.LowerCenter;
         dialogue.fontSize = 20;
         StartCoroutine(Timer());
@@ -36,7 +37,7 @@ public class GameManager :  Singleton<GameManager>
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(currentLevelName))
+        if(SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(currentLevelName) && SceneManager.sceneCount > 1)
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(currentLevelName));
         
         if (time > 0 && collectables == 12 && tutorialOver && currentLevelName == 1)
@@ -45,6 +46,7 @@ public class GameManager :  Singleton<GameManager>
             gameOver = true;
             winOutro.SetActive(true);
             SceneManager.UnloadSceneAsync(currentLevelName);
+            currentLevelName = 0;
             timeText.alignment = TextAnchor.MiddleCenter;
             timeText.fontSize = 40;
             timeText.text = "Max remembered the dream and decided to follow it!\n(You Win! Press R to play again!)";
@@ -54,13 +56,14 @@ public class GameManager :  Singleton<GameManager>
             gameOver = true;
             lossOutro.SetActive(true);
             SceneManager.UnloadSceneAsync(currentLevelName);
+            currentLevelName = 0;
             timeText.alignment = TextAnchor.MiddleCenter;
             timeText.fontSize = 40;
             timeText.text = "The dream has been forgotten and Max is still missing something in life.\n(You Lose! Press R to try again!)";
         }
         if(gameOver && Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(0).name);
+            SceneManager.LoadSceneAsync(0);
             Cursor.lockState = CursorLockMode.Confined;
         }
         if(currentLevelName == 0 || currentLevelName == 1)
@@ -96,7 +99,7 @@ public class GameManager :  Singleton<GameManager>
             }
             else if(currentLevelName == 5 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
-                dialogue.text = "Egypt";
+                dialogue.text = "Our escape is complete, but our journey is just beginning.  And that journey brings many gifts and many challenges….and sometimes those are the same things. - Moses";
             }
         }
     }
@@ -108,9 +111,9 @@ public class GameManager :  Singleton<GameManager>
     {
         intro.SetActive(true);
         timeText.alignment = TextAnchor.MiddleCenter;
-        timeText.fontSize = 40;
+        timeText.fontSize = 30;
         timeText.text = "Through the progression of life many lose their will or inspiration to see the world. It is often these journeys that lead to a better understanding of our surroundings, and a renewed perspective on where we started." +
-            " Max has lost his will to see the world. Renew his will and complete his dream. ";
+            " Max has lost his will to see the world. Renew his will and complete his dream.\n(Press the LEFT-MOUSE BUTTON to get through the tutorial.)";
         while (!Input.GetButtonDown("Fire1"))
             yield return null;
         intro.SetActive(false);
