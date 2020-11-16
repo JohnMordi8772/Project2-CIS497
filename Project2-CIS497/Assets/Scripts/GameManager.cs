@@ -12,12 +12,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager :  Singleton<GameManager>
 {
-    public static Text timeText;
+    public Text timeText;
     private int time;
     private bool gameOver;
     public static bool tutorialOver;
     public static int currentLevelName = 0;
     public static float collectables = 0f;
+    public Text dialogue;
 
 
     // Start is called before the first frame update
@@ -26,7 +27,8 @@ public class GameManager :  Singleton<GameManager>
         gameOver = false;
         time = 300;
         tutorialOver = false;
-        timeText = Text.FindObjectOfType<Text>();
+        dialogue.alignment = TextAnchor.LowerCenter;
+        dialogue.fontSize = 20;
         StartCoroutine(Timer());
     }
 
@@ -53,6 +55,29 @@ public class GameManager :  Singleton<GameManager>
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Cursor.lockState = CursorLockMode.Confined;
+        }
+        if(currentLevelName == 0 || currentLevelName == 1)
+        {
+            dialogue.text = "";
+        }
+        else
+        {
+            if (currentLevelName == 2 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
+            {
+                dialogue.text = "Statue of Liberty";
+            }
+            else if(currentLevelName == 3 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
+            {
+                dialogue.text = "Asia";
+            }
+            else if(currentLevelName == 4 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
+            {
+                dialogue.text = "Everest";
+            }
+            else if(currentLevelName == 5 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
+            {
+                dialogue.text = "Egypt";
+            }
         }
     }
 

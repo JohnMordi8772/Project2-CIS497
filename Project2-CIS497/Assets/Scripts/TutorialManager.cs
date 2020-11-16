@@ -89,7 +89,7 @@ public class TutorialManager : MonoBehaviour
 
         Instantiate(collectable, new Vector3(-8,35,70), transform.rotation);
 
-        while (!Input.GetButtonDown("Fire1"))
+        while (GameObject.FindGameObjectsWithTag("Collectable").Length > 0)
         {
             yield return null;
         }

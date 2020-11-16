@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hatchet
       objectReference: {fileID: 0}
+    - target: {fileID: 1917468586814384, guid: 2e23b6dcdb69e41e9b53f0850d904d36, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
+      objectReference: {fileID: 0}
     - target: {fileID: 4200330878792296, guid: 2e23b6dcdb69e41e9b53f0850d904d36, type: 3}
       propertyPath: m_LocalPosition.x
       value: 221.61
@@ -1139,6 +1143,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MedBox
       objectReference: {fileID: 0}
+    - target: {fileID: 1712029237304932, guid: eec1043988e994b02bcff37595587a1f, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
+      objectReference: {fileID: 0}
     - target: {fileID: 4727625962885472, guid: eec1043988e994b02bcff37595587a1f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 220.1341
@@ -1344,6 +1352,10 @@ PrefabInstance:
     - target: {fileID: 1310355444530856, guid: 91de66de50ac94488abb3b2cc94e0a5b, type: 3}
       propertyPath: m_Name
       value: Flashlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310355444530856, guid: 91de66de50ac94488abb3b2cc94e0a5b, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
       objectReference: {fileID: 0}
     - target: {fileID: 4884165121132574, guid: 91de66de50ac94488abb3b2cc94e0a5b, type: 3}
       propertyPath: m_LocalPosition.x
