@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿/*
+ * Name: George Tang, Josh Bumbalough, John Mordi, Levi Wyant
+ * Project Dream
+ * Purpose: Marks classes as singletons and prevents more than one instance existing at a time.
+ * */
+ using UnityEngine;
 using System.Collections;
 
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>

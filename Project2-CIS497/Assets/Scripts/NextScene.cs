@@ -1,5 +1,5 @@
 ﻿/*
- * Name: George Tang
+ * Name: George Tang, John Mordi
  * Project Dream
  * Purpose: Loads next scene upon portal entry
  * */

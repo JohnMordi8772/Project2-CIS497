@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Name: Josh Bumbalough, John Mordi
+ * Project Dream
+ * Purpose: Loads next scene upon portal entry
+ * */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

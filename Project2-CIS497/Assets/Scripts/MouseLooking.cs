@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Name: John Mordi
+ * Project Dream
+ * Purpose: Gives player control of camera rotation via the mouse
+ * */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

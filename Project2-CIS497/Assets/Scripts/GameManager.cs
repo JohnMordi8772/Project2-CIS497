@@ -1,5 +1,5 @@
 ﻿/*
- * Name: Jack Mordi
+ * Name: John Mordi
  * Project Dream
  * Purpose: controls the aspects of the game, win/loss conditions, timer, collecting objects
  */
