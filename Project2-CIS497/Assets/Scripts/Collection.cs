@@ -6,10 +6,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Collection : MonoBehaviour
 {
     public GameObject hide1;
+    public int score;
+    public Text scoreText;
+   
     //public GameObject hide2;
 
     // Start is called before the first frame update
@@ -33,6 +37,8 @@ public class Collection : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.collectables += 1f;
+            score++;
+            scoreText.text = "Score: " + score;
             //Debug.Log(GameManager.collectables);
             
             //gameObject.SetActive(false);

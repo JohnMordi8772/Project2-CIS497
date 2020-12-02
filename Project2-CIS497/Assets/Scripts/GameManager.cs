@@ -1,5 +1,5 @@
 ﻿/*
- * Name: John Mordi
+ * Name: John Mordi, George Tang
  * Project Dream
  * Purpose: controls the aspects of the game, win/loss conditions, timer, collecting objects
  */
@@ -13,6 +13,7 @@ using UnityEngine.SceneManagement;
 public class GameManager :  Singleton<GameManager>
 {
     public Text timeText;
+    //public static int score;
     private int time;
     private bool gameOver;
     public static bool tutorialOver;
@@ -20,6 +21,7 @@ public class GameManager :  Singleton<GameManager>
     public static float collectables;
     public Text dialogue;
     public GameObject intro, winOutro, lossOutro;
+    //public Text scoreText;
 
 
     // Start is called before the first frame update
@@ -29,10 +31,18 @@ public class GameManager :  Singleton<GameManager>
         time = 300;
         tutorialOver = false;
         collectables = 0f;
+        //score = 0;
+        //UpdateScore(0);
         dialogue.alignment = TextAnchor.LowerCenter;
         dialogue.fontSize = 20;
         StartCoroutine(Timer());
     }
+    // score adding when collectible has been hit
+    //public void UpdateScore(int scoreToAdd)
+    //{
+    //    score += scoreToAdd;
+    //    scoreText.text = "Score: " + score;
+    //}
 
     // Update is called once per frame
     void Update()
