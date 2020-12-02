@@ -1,5 +1,5 @@
 ﻿/*
- * Name: Josh Bumbalough, John Mordi
+ * Name: Josh Bumbalough, John Mordi, George Tang
  * Project Dream
  * Purpose: Loads next scene upon portal entry
  * */
