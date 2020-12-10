@@ -20,7 +20,7 @@ public class GameManager :  Singleton<GameManager>
     public static int currentLevelName = 0;
     public static float collectables;
     public Text dialogue;
-    public GameObject intro, winOutro, lossOutro;
+    public GameObject intro, introImage1, introImage2, introImage3, introImage4, introImage5, winOutro, lossOutro;
     //public Text scoreText;
 
 
@@ -109,7 +109,7 @@ public class GameManager :  Singleton<GameManager>
             }
             else if(currentLevelName == 5 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
-                dialogue.text = "Our escape is complete, but our journey is just beginning.  And that journey brings many gifts and many challenges….and sometimes those are the same things. - Moses";
+                dialogue.text = "Our escape is complete, but our journey is just beginning.  And that journey brings many gifts and many challenges… and sometimes those are the same things. - Moses";
             }
         }
     }
@@ -122,10 +122,53 @@ public class GameManager :  Singleton<GameManager>
         intro.SetActive(true);
         timeText.alignment = TextAnchor.MiddleCenter;
         timeText.fontSize = 30;
-        timeText.text = "Through the progression of life many lose their will or inspiration to see the world. It is often these journeys that lead to a better understanding of our surroundings, and a renewed perspective on where we started." +
+        timeText.text = "(PLACEHOLDER IMAGE1)Through the progression of life many lose their will or inspiration to see the world. It is often these journeys that lead to a better understanding of our surroundings, and a renewed perspective on where we started." +
             " Max has lost his will to see the world. Renew his will and complete his dream.\n(Press the LEFT-MOUSE BUTTON to get through the tutorial.)";
+
         while (!Input.GetButtonDown("Fire1"))
             yield return null;
+
+        yield return null;
+
+        introImage1.SetActive(false);
+        introImage2.SetActive(true);
+
+        timeText.text = "(PLACEHOLDER IMAGE2)";
+
+        while (!Input.GetButtonDown("Fire1"))
+            yield return null;
+
+        yield return null;
+
+        introImage2.SetActive(false);
+        introImage3.SetActive(true);
+
+        timeText.text = "(PLACEHOLDER IMAGE3)";
+
+        while (!Input.GetButtonDown("Fire1"))
+            yield return null;
+
+        yield return null;
+
+        introImage3.SetActive(false);
+        introImage4.SetActive(true);
+
+        timeText.text = "(PLACEHOLDER IMAGE4)";
+
+        while (!Input.GetButtonDown("Fire1"))
+            yield return null;
+
+        yield return null;
+
+        introImage4.SetActive(false);
+        introImage5.SetActive(true);
+
+        timeText.text = "(PLACEHOLDER IMAGE5)";
+
+        while (!Input.GetButtonDown("Fire1"))
+            yield return null;
+
+
         intro.SetActive(false);
         timeText.alignment = TextAnchor.UpperLeft;
         timeText.fontSize = 14;

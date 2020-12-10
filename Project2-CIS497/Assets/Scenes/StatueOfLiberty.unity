@@ -1481,12 +1481,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508474614}
-  m_LocalRotation: {x: 0.009343721, y: -0.6596952, z: -0.020817023, w: -0.75118685}
-  m_LocalPosition: {x: 14.8, y: 9.04, z: 43.63}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.021404572, y: -0.70455635, z: -0.007905557, w: 0.70928115}
+  m_LocalPosition: {x: -0.1359024, y: 0.888, z: -0.7914843}
+  m_LocalScale: {x: 0.20000903, y: 0.2003086, z: 1.9687786}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_Father: {fileID: 1013215231}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -2.379, y: 82.557, z: 1.087}
 --- !u!1001 &546036416
 PrefabInstance:
@@ -3273,6 +3273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 5277746845241116816, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5277746845241116819, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
       propertyPath: currentLevel
       value: 2
@@ -3331,6 +3335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
+--- !u!4 &1013215231 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5277746845241116831, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
+  m_PrefabInstance: {fileID: 1013215230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1023927133 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d8ea93d2d4757e444a5349f4bc849128, type: 3}
@@ -3883,7 +3892,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
 --- !u!1001 &1250268890
 PrefabInstance:
@@ -4818,6 +4827,11 @@ MonoBehaviour:
   timeText: {fileID: 0}
   dialogue: {fileID: 0}
   intro: {fileID: 0}
+  introImage1: {fileID: 0}
+  introImage2: {fileID: 0}
+  introImage3: {fileID: 0}
+  introImage4: {fileID: 0}
+  introImage5: {fileID: 0}
   winOutro: {fileID: 0}
   lossOutro: {fileID: 0}
 --- !u!4 &1513419407

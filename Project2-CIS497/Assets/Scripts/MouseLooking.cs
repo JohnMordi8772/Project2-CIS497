@@ -24,6 +24,7 @@ public class MouseLooking : MonoBehaviour
     {
         mouseX += Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         mouseY -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        mouseY = Mathf.Clamp(mouseY, -90f, 90f);
         mouseZ = Mathf.Clamp(mouseZ, 0f, 0f);
 
         player.transform.localRotation = Quaternion.Euler(mouseY, mouseX, mouseZ);

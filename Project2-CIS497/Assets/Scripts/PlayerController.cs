@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         //transform.localRotation = Quaternion.Euler(0f, 0f, zRotation);
 
 
-        Vector3 vector = transform.forward * z;// + transform.right * x * speed;
+        Vector3 vector = transform.forward * z + transform.right * x;
         controller.Move(vector);
     }
 }
