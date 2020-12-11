@@ -10,11 +10,6 @@ using UnityEngine.UI;
 
 public class Collection : MonoBehaviour
 {
-    public GameObject hide1;
-    public int score;
-    public Text scoreText;
-   
-    //public GameObject hide2;
 
     // Start is called before the first frame update
     void Start()
@@ -37,12 +32,6 @@ public class Collection : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.collectables += 1f;
-            score++;
-            scoreText.text = "Score: " + score;
-            //Debug.Log(GameManager.collectables);
-            
-            //gameObject.SetActive(false);
-            //hide2.gameObject.SetActive(true);
         }
         else
         {

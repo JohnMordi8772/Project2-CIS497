@@ -23,8 +23,6 @@ public class GameManager :  Singleton<GameManager>
     public bool closeSOL, closeF, closeME, closeP, done;
     public Text dialogue;
     public GameObject intro, introImage1, introImage2, introImage3, introImage4, introImage5, winOutro, lossOutro;
-    //public Text scoreText;
-
 
     // Start is called before the first frame update
     void Start()
@@ -33,8 +31,6 @@ public class GameManager :  Singleton<GameManager>
         time = 300;
         tutorialOver = false;
         collectables = 0f;
-        //score = 0;
-        //UpdateScore(0);
         dialogue.alignment = TextAnchor.LowerCenter;
         dialogue.fontSize = 20;
         StartCoroutine(Timer());
@@ -44,12 +40,6 @@ public class GameManager :  Singleton<GameManager>
         closeP = true;
         done = false;
     }
-    // score adding when collectible has been hit
-    //public void UpdateScore(int scoreToAdd)
-    //{
-    //    score += scoreToAdd;
-    //    scoreText.text = "Score: " + score;
-    //}
 
     // Update is called once per frame
     void Update()

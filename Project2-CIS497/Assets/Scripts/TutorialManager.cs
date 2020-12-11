@@ -96,7 +96,7 @@ public class TutorialManager : MonoBehaviour
 
         yield return null;
 
-        tutorialText.text = "There are three items in each level. You need to get all of them before leaving a level and after you have done so, you'll have to get to the portal to come back here.";
+        tutorialText.text = "There are three items in each level. You need to get all of them before you can leave a level. A portal will appear around where you spawned that will take you back to the hub.";
 
         while (!Input.GetButtonDown("Fire1"))
         {
