@@ -10,7 +10,7 @@ using UnityEngine;
 public class MouseLooking : MonoBehaviour
 {
     public GameObject player;
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 65f;
     private float verticalLookRotation = 0f;
     private float mouseX, mouseY, mouseZ = 0f;
     // Start is called before the first frame update
