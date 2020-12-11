@@ -3275,7 +3275,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5277746845241116816, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277746845241116816, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
+      propertyPath: m_TagString
+      value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 5277746845241116819, guid: f4cbde0da38d5ce42a429cc71da611c6, type: 3}
       propertyPath: currentLevel

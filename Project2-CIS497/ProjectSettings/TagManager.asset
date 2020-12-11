@@ -9,6 +9,11 @@ TagManager:
   - Collectable
   - RingMarker
   - GameManager
+  - Portal
+  - SOL
+  - FC
+  - ME
+  - P
   layers:
   - Default
   - TransparentFX

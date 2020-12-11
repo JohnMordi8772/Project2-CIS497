@@ -61,7 +61,7 @@ public class TutorialManager : MonoBehaviour
 
         yield return null;
 
-        tutorialText.text = "But to move, you will press W to go forward and S to go backwards.";
+        tutorialText.text = "But to move, you will press W to go forward, S to go backwards, A to go left, and D to go right.";
 
         while (!Input.GetButtonDown("Fire1"))
         {
@@ -96,7 +96,7 @@ public class TutorialManager : MonoBehaviour
 
         yield return null;
 
-        tutorialText.text = "There are three items in each level. You should get all of them before leaving a level and after you have done so, you'll have to get to the portal to come back here.";
+        tutorialText.text = "There are three items in each level. You need to get all of them before leaving a level and after you have done so, you'll have to get to the portal to come back here.";
 
         while (!Input.GetButtonDown("Fire1"))
         {

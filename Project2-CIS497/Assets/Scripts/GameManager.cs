@@ -19,6 +19,8 @@ public class GameManager :  Singleton<GameManager>
     public static bool tutorialOver;
     public static int currentLevelName = 0;
     public static float collectables;
+    public static GameObject portal = null;
+    public bool closeSOL, closeF, closeME, closeP, done;
     public Text dialogue;
     public GameObject intro, introImage1, introImage2, introImage3, introImage4, introImage5, winOutro, lossOutro;
     //public Text scoreText;
@@ -36,6 +38,11 @@ public class GameManager :  Singleton<GameManager>
         dialogue.alignment = TextAnchor.LowerCenter;
         dialogue.fontSize = 20;
         StartCoroutine(Timer());
+        closeSOL = true;
+        closeF = true;
+        closeME = true;
+        closeP = true;
+        done = false;
     }
     // score adding when collectible has been hit
     //public void UpdateScore(int scoreToAdd)
@@ -49,6 +56,21 @@ public class GameManager :  Singleton<GameManager>
     {
         if(SceneManager.GetActiveScene() != SceneManager.GetSceneByBuildIndex(currentLevelName) && SceneManager.sceneCount > 1)
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(currentLevelName));
+        
+        if(currentLevelName == 1 && !done)
+        {
+                GameObject.FindGameObjectWithTag("SOL").SetActive(closeSOL);
+                GameObject.FindGameObjectWithTag("FC").SetActive(closeF);
+                GameObject.FindGameObjectWithTag("ME").SetActive(closeME);
+                GameObject.FindGameObjectWithTag("P").SetActive(closeP);
+                done = true;
+        }
+
+        if(currentLevelName != 1 && currentLevelName != 0 && portal == null)
+        {
+            portal = GameObject.FindGameObjectWithTag("Portal");
+            portal.SetActive(false);
+        }
         
         if (time > 0 && collectables == 12 && tutorialOver && currentLevelName == 1)
         {
@@ -84,32 +106,36 @@ public class GameManager :  Singleton<GameManager>
         //Dialogue goes here
         else
         {
-            /*
-             * these quotes can be changed later to fit something more linear with the "character" of the story later. 
-             * For now these quotes are in place for the playtesting part of our project. 
-             * 
-             */
             if (currentLevelName == 2 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             { 
-                dialogue.text = "...There are no words that can tell the hidden spirit of the wilderness "             +
-                    "that can reveal its mystery, its melancholy and its charm. The nation behaves well if it "        +
-                    "treats the natural resources as assets which it must turn over to the next generation increased " +
-                    "and not impaired in value. - Theodore Roosevelt";
+                dialogue.text = "A symbol of hope comes to light in Max’s Mind. Max wants to learn more about his home and understand its roots more clearly. ";
+                portal.SetActive(true);
+                closeSOL = false;
+                done = false;
             }
             else if(currentLevelName == 3 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
-                dialogue.text = "A good traveller has no fixed plans, and is not intent on arriving. - Lao Tzu";
+                dialogue.text = "Visions of complex structures in a far away land. Max wants to understand the world better." +
+                    " Finding these fragments helps Max remember to see the world in his lifetime. ";
+                portal.SetActive(true);
+                closeF = false;
+                done = false;
             }
             else if(currentLevelName == 4 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
-                //George Mallory passed in 1924. Copyrights on text go into public domain after 70 years after the death of an author/ commmentator (so clear as of 1994). 
-                dialogue.text = "I look back on tremendous effects and exhaustion and dismal looking out of a tent door onto " +
-                                 "a dismal world of snow and vanishing hopes - and yet... there have been a good many things to set on the other side." +
-                                 " - George Mallory";
+                dialogue.text = "A titan climbs through the clouds as Max begins to remember the mountains of the Himalayas in Nepal." +
+                    " To see the world from such great heights may change Max’s perspective on what is important in life.";
+                portal.SetActive(true);
+                closeME = false;
+                done = false;
             }
             else if(currentLevelName == 5 && GameObject.FindGameObjectsWithTag("Collectable").Length == 0)
             {
-                dialogue.text = "Our escape is complete, but our journey is just beginning.  And that journey brings many gifts and many challenges… and sometimes those are the same things. - Moses";
+                dialogue.text = "With these fragments of his memory Max begins to remember great Pyramids from an ancient civilization." +
+                    " Finding these fragments helps Max remember to see the world in his lifetime.";
+                portal.SetActive(true);
+                closeP = false;
+                done = false;
             }
         }
     }
@@ -120,10 +146,9 @@ public class GameManager :  Singleton<GameManager>
     IEnumerator Intro()
     {
         intro.SetActive(true);
-        timeText.alignment = TextAnchor.MiddleCenter;
-        timeText.fontSize = 30;
-        timeText.text = "(PLACEHOLDER IMAGE1)Through the progression of life many lose their will or inspiration to see the world. It is often these journeys that lead to a better understanding of our surroundings, and a renewed perspective on where we started." +
-            " Max has lost his will to see the world. Renew his will and complete his dream.\n(Press the LEFT-MOUSE BUTTON to get through the tutorial.)";
+        timeText.alignment = TextAnchor.LowerCenter;
+        timeText.fontSize = 25;
+        timeText.text = "This is Max. After another long day in the workplace his ability to stay focus has dwindled.(Press the LEFT-MOUSE BUTTON to progress the story.";
 
         while (!Input.GetButtonDown("Fire1"))
             yield return null;
@@ -133,7 +158,7 @@ public class GameManager :  Singleton<GameManager>
         introImage1.SetActive(false);
         introImage2.SetActive(true);
 
-        timeText.text = "(PLACEHOLDER IMAGE2)";
+        timeText.text = "Throughout the day Max daydreams of where he would rather be. Max’s daily work and daily routine has left him unfocused and distracted from his goals. ";
 
         while (!Input.GetButtonDown("Fire1"))
             yield return null;
@@ -143,7 +168,7 @@ public class GameManager :  Singleton<GameManager>
         introImage2.SetActive(false);
         introImage3.SetActive(true);
 
-        timeText.text = "(PLACEHOLDER IMAGE3)";
+        timeText.text = "Even when enjoying taking a break from a long day’s work…";
 
         while (!Input.GetButtonDown("Fire1"))
             yield return null;
@@ -153,7 +178,7 @@ public class GameManager :  Singleton<GameManager>
         introImage3.SetActive(false);
         introImage4.SetActive(true);
 
-        timeText.text = "(PLACEHOLDER IMAGE4)";
+        timeText.text = "…Max still finds himself distracted thinking about where he could be.";
 
         while (!Input.GetButtonDown("Fire1"))
             yield return null;
@@ -163,7 +188,9 @@ public class GameManager :  Singleton<GameManager>
         introImage4.SetActive(false);
         introImage5.SetActive(true);
 
-        timeText.text = "(PLACEHOLDER IMAGE5)";
+        timeText.text = "All of Max’s hard work has always been a means to be able to afford a comfortable life where such adventures can be taken. " +
+            "Max, however, has forgotten to do what is important to him most. While Max begins to fall asleep, he has a dream." +
+            " A dream of travels that take him far from home.";
 
         while (!Input.GetButtonDown("Fire1"))
             yield return null;
@@ -188,6 +215,7 @@ public class GameManager :  Singleton<GameManager>
         }
         currentLevelName = levelName;
     }
+
     public static void LoadLevelStatic(int levelName)
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -197,7 +225,6 @@ public class GameManager :  Singleton<GameManager>
             Debug.LogError("[GameManager] Unable to load level " + levelName);
             return;
         }
-        
         currentLevelName = levelName;
         
     }
